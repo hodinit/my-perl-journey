@@ -27,6 +27,8 @@ print "key is $vegetables{$veg},\n";
 print "value is $veg\n";
 }
 
+#my %vegetables = ( 'celery', 'yuck', 'spinach', 'delicious' );
+
 
 
 
