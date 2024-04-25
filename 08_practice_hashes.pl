@@ -1,3 +1,9 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use diagnostics;
+
 my %people = (
     "Alice",    1,
     "Bob",      2,

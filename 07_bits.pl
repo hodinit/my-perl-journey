@@ -1,10 +1,11 @@
+#!/usr/bin/perl
+
 use strict;
 use warnings;
 use diagnostics;
 
 my $num = .3;
 my $bits = 32;
-# don’t touch anything below this line
 
 my $accumulator = 0;
 my $bitstring = '';

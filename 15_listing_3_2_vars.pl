@@ -1,3 +1,5 @@
+#!/usr/bin/perl
+
 # package MyCompany::Stuff;
 # use strict;
 # use warnings;

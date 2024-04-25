@@ -1,5 +1,8 @@
+#!/usr/bin/perl
+
 use strict;
 use warnings;
+use diagonstics;
 
 my $answer = 42;
 my $body_temp_fahrenheit = 98.6;
