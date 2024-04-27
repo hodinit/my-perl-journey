@@ -4,41 +4,22 @@ use strict;
 use warnings;
 use diagnostics;
 
-our @array = ('andrew' , 'andy' , 'kaufman');
+# correct array
+my @array = qw(andrew andy kaufman);
 
-print qq(andrew "andy" kaufman),"\n";
+# plase generate this strig from it:
+# andrew "andy" kaufman
+
+print "$array[0] \"$array[1]\" $array[2]\n";
+
+print @array, "\n";
 
 my %hash = (
-    'bananas' => 'yellow',
-    'apples' => 'red',
+    'bananas'   => 'yellow',
+    'apples'    => 'red',
     'cucumbers' => 'green',
 );
 
-for my $i (keys %hash) 
-{
-    print $i," are ",$hash{$i}, "\n";
+foreach my $key ( keys %hash ) {
+    print $key, " are ", $hash{$key}, "\n";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
