@@ -58,3 +58,15 @@ printf "<%-29s>\n", 'some name';
 
 printf "%20.8s\n", 'some name';
 
+my $string = 'halfhearted';
+my $substr = substr $string, 4, 1;
+print $substr, "\n";
+
+my $string = 'halfhearted';
+my $substr = substr $string, 0, 4, 'pre';
+print "$substr\n$string\n";
+
+my $string = "Aramis,Athos,Portos";
+$string =~ tr/,/:/;
+print $string, "\n";
+
