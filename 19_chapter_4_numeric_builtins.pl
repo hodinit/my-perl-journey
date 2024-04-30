@@ -44,9 +44,34 @@ use Math::Complex;
 print sqrt(-81), "\n";
 
 my $number = 5;
-if ($number % 2 == 0 ) {
+if ( $number % 2 == 0 ) {
     print "Even\n";
 }
 else {
     print "Odd\n";
 }
+
+my ( $num1, $num2 ) = ( 3, 9 );
+if ( $num1 < $num2 ) {
+    print "$num1 is less than $num2\n";
+}
+else {
+    print "$num1 is not less than $num2\n";
+}
+
+if ( 'b' eq 'a' ) {
+    print 'yes',"\n";
+}
+else {
+    print 'no',"\n";
+}
+
+print 'b' cmp 'b',"\n";
+
+my @words = ( 'b', 'a' );
+my @sorted = sort { $a cmp $b } @words;
+
+print @words, "\n";
+print @sorted, "\n";
+
+
