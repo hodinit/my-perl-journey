@@ -60,18 +60,66 @@ else {
 }
 
 if ( 'b' eq 'a' ) {
-    print 'yes',"\n";
+    print 'yes', "\n";
 }
 else {
-    print 'no',"\n";
+    print 'no', "\n";
 }
 
-print 'b' cmp 'b',"\n";
+print 'b' cmp 'b', "\n";
 
-my @words = ( 'b', 'a' );
+my @words  = ( 'b', 'a' );
 my @sorted = sort { $a cmp $b } @words;
 
-print @words, "\n";
+print @words,  "\n";
 print @sorted, "\n";
 
+my @numbers = ( 4, 6, 1, 7, 4, 3, 9 );
+my @sorted  = sort { $a <=> $b } @numbers;
 
+print @numbers, "\n";
+print @sorted,  "\n";
+
+my $zero  = 0;
+my $two   = 2;
+my $three = 3;
+my $x     = $zero  && $two;
+my $y     = $three && $zero;
+my $z     = $two   && $two;
+
+print $x, "\n";
+print $y, "\n";
+print $z, "\n";
+print "\n";
+
+my $zero  = 0;
+my $two   = 2;
+my $three = 3;
+my $undef;
+my $w = $zero  || $two;      # $w is 2
+my $x = $undef || $zero;     # $x is 0
+my $y = $zero  // $two;      # $y is 0!
+my $z = $undef // $three;    # $z is 3
+
+print $w, "\n";
+print $x, "\n";
+print $y, "\n";
+print $z, "\n";
+
+my $x += 4;
+my $y .= "foo";
+my $z = 1;
+$z *= 4;
+
+print $x, "\n";
+print $y, "\n";
+print $z, "\n";
+
+print -4**.5, "\n";
+print sqrt(-4),"\n";
+
+my $x = 3 + 2 * 5;
+print $x,"\n";
+
+my $x = (2 ** 3) ** 2;
+print $x,"\n";
